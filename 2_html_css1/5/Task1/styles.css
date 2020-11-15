@@ -1,0 +1,26 @@
+.animation {
+    width: 150px;
+    height: 150px;
+    background-color: #f00;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    33% {
+        transform: translate(100px, 0);
+    }
+    67% {
+        transform: translate(100px, 100%);
+    }
+    100% {
+        transform: translate(100px, 100%) scale(2) rotate(145deg);
+    }
+}
+
+.animation:hover {
+    background-color: #ff0;
+}
