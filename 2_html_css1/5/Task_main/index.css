@@ -201,6 +201,8 @@
     height: 120px;
 }
 
+/* cloud-1 */
+
 .cloud-1 {
     top: 10px;
     left: 180px;
@@ -226,8 +228,19 @@
     }
 }
 
+/* cloud-2 */
+
 .cloud-2 {
     top: 50px;
+    left: 450px;
+    transform: scale(-0.38, 0.38);
+    animation: cloud2-move 40s infinite reverse linear;
+}
+
+@keyframes cloud2-move {
+    100% {
+        transform: scale(-0.38, 0.38) translateX(1750px);
+    }
 }
 
 .cloud-3 {
