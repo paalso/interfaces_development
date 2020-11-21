@@ -213,18 +213,15 @@
 @keyframes cloud1-move {
     40% {
         transform: scale(0.3) translateX(850px);
-        animation-timing-function: linear;
     }
     50% {
         transform: scale(0.3) translateX(851px);
-        animation-timing-function: linear;
     }
     50.001% {
         transform: scale(0.3) translateX(-1050px);
     }
     100% {
         transform: scale(0.3) translateX(0);
-        animation-timing-function: linear;
     }
 }
 
