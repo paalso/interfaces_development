@@ -240,8 +240,28 @@
     }
 }
 
+/* cloud-3 */
+
 .cloud-3 {
     top: 100px;
+    left: 370px;
+    transform: scale(0.5);
+    animation: cloud3-move 30s infinite linear;
+}
+
+@keyframes cloud3-move {
+    10% {
+        transform: scale(0.5) translateX(160px);
+    }
+    20% {
+        transform: scale(0.5) translateX(161px);
+    }
+    20.001% {
+        transform: scale(0.5) translateX(-1050px);
+    }
+    100% {
+        transform: scale(0.5) translateX(0);
+    }
 }
 
 .cloud-4 {
