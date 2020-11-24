@@ -264,8 +264,25 @@
     }
 }
 
+/* cloud-4 */
+
 .cloud-4 {
     top: 170px;
+    left: -130px;
+    transform: scale(-0.6, 0.6);
+    animation: cloud4-move 20s infinite linear;
+}
+
+@keyframes cloud4-move {
+    80% {
+        transform: scale(-0.6, 0.6) translateX(-1000px);
+    }
+    80.001% {
+        transform: scale(-0.6, 0.6) translateX(300px);
+    }
+    100% {
+        transform: scale(-0.6, 0.6) translateX(0);
+    }
 }
 
 .sea {
