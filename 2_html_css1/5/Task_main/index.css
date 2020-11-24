@@ -57,8 +57,7 @@
 
 .ship {
     position: absolute;
-    /* right: -120px; */
-    right: 0;
+    right: -120px;
     bottom: 30px;
     width: 100px;
     height: 36px;
@@ -118,9 +117,6 @@
 }
 
 @keyframes smoke1-move {
-    0% {
-        opacity: 1;
-    }
     60% {
         transform: translateY(-20px) scale(2);
         opacity: 0;
@@ -134,14 +130,14 @@
     0% {
         opacity: 0;
     }
-    29.99% {
+    19.99% {
         opacity: 0;
     }
-    30% {
+    20% {
         transform: translateY(0) scale(1);
         opacity: 1;
     }
-    90% {
+    80% {
         transform: translateY(-20px) scale(2);
         opacity: 0;
     }
@@ -154,11 +150,11 @@
     0% {
         opacity: 0;
     }
-    59.999% {
+    39.99% {
         transform: translateY(0) scale(1);
         opacity: 0;
     }
-    60% {
+    40% {
         transform: translateY(0) scale(1);
         opacity: 1;
     }
