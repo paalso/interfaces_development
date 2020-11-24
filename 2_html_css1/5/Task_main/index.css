@@ -57,10 +57,17 @@
 
 .ship {
     position: absolute;
-    right: 0;
+    right: -120px;
     bottom: 30px;
     width: 100px;
     height: 36px;
+    animation: ship-move 60s infinite linear;
+}
+
+@keyframes ship-move {
+    100% {
+        transform: translateX(-620px);
+    }
 }
 
 .ship_smokestack {
