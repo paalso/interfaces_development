@@ -57,7 +57,8 @@
 
 .ship {
     position: absolute;
-    right: -120px;
+    /* right: -120px; */
+    right: 0;
     bottom: 30px;
     width: 100px;
     height: 36px;
@@ -101,16 +102,70 @@
 .smoke-1 {
     top: -25px;
     right: 44px;
+    animation: smoke1-move 2s infinite linear;
 }
 
 .smoke-2 {
     top: -25px;
     right: 42px;
+    animation: smoke2-move 2s infinite linear;
 }
 
 .smoke-3 {
     top: -25px;
     right: 49px;
+    animation: smoke3-move 2s infinite linear;
+}
+
+@keyframes smoke1-move {
+    0% {
+        opacity: 1;
+    }
+    60% {
+        transform: translateY(-20px) scale(2);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes smoke3-move {
+    0% {
+        opacity: 0;
+    }
+    29.99% {
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    90% {
+        transform: translateY(-20px) scale(2);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes smoke2-move {
+    0% {
+        opacity: 0;
+    }
+    59.999% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20px) scale(2);
+        opacity: 0;
+    }
 }
 
 .sun {
