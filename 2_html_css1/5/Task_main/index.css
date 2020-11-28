@@ -16,6 +16,26 @@
     height: 380px;
     background: skyblue;
     box-shadow: 0 -400px 300px -300px steelblue inset;
+    animation: colors-change 100s infinite linear;
+}
+
+@keyframes colors-change {
+    25% {
+        background: skyblue;
+        box-shadow: 0 -400px 300px -300px steelblue inset;
+    }
+    48% {
+        background: darkslateblue;
+        box-shadow: 0 -400px 300px -300px orangered inset;
+    }
+    80% {
+        background: darkslateblue;
+        box-shadow: 0 -400px 300px -300px transparent inset;
+    }
+    100% {
+        background: skyblue;
+        box-shadow: 0 -400px 300px -300px steelblue inset;
+    }
 }
 
 /*TODO
@@ -175,6 +195,7 @@
     box-shadow: 0 0 100px #ffdf05;
     /* ------------- */
     animation: sun-move1 12s infinite linear;
+    /* border: green dotted 1px; */
 }
 
 @keyframes sun-move1 {
@@ -190,12 +211,13 @@
     transform-origin: bottom center;
     /* --------- */
     transform: rotate(-90deg);
-    animation: sun-move2 120s infinite linear;
+    animation: sun-move2 100s infinite linear;
+    /* border: red dotted 1px; */
 }
 
 @keyframes sun-move2 {
     100% {
-        transform: rotate(360deg);
+        transform: rotate(270deg);
     }
 }
 
@@ -249,7 +271,6 @@
 .cloud {
     position: absolute;
     left: -180px;
-    /* left: 300px; */
     width: 200px;
     height: 60px;
     opacity: .8;
